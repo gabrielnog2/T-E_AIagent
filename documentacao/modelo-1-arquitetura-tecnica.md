@@ -108,7 +108,7 @@ graph LR
    ```
    ## 7. Fluxo de Dados (Data Flow)
    
-```markdown
+```mermaid
 
    sequenceDiagram
   autonumber
