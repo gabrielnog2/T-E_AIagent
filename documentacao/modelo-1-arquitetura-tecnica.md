@@ -98,8 +98,8 @@ graph TB
   ```mermaid
 
 graph LR
-  DEV["🛠️ DEV – Desenvolvimento\nCriação de tópicos e ingestão de documentos"]
-  QA["🧪 QA/Homologação\nValidação de respostas e idiomas"]
+  DEV["🛠️ DEV – Desenvolvimento\nLógica e base de dados"]
+  QA["🧪 QA/Homologação\nValidação de respostas"]
   PROD["🚀 PRODUÇÃO\nSuporte ao usuário interno"]
   DEV -->|CI/CD| QA -->|Aprovação T&E| PROD
   style DEV fill:#FFF3E0,stroke:#E65100
