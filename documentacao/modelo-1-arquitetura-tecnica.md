@@ -1,9 +1,6 @@
 
 # 1️⃣ Modelo – Arquitetura Técnica do Chatbot **Travall** 
 
-> **Objetivo**: descrever a arquitetura técnica, integrações, segurança, observabilidade e fluxo de implantação do assistente virtual *Travall*, garantindo alinhamento com a especificação principal do projeto.  
-> **Contexto**: o Travall centraliza e padroniza orientações de **Travel & Expenses (T&E) South America**, publicado no **Microsoft Teams (SA)**, autenticado por **Microsoft Entra ID**, com um **fluxo mínimo no Power Automate** para rota de ajuda/abertura de chamado.  
-
 ---
 
 ## 1. Visão Geral da Solução
