@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-from textwrap import dedent
 
-content = dedent(r"""
 # 1️⃣ Modelo – Arquitetura Técnica do Chatbot **Travall** 
 
 > **Objetivo**: descrever a arquitetura técnica, integrações, segurança, observabilidade e fluxo de implantação do assistente virtual *Travall*, garantindo alinhamento com a especificação principal do projeto.  
@@ -112,7 +109,7 @@ graph LR
    ## 7. Fluxo de Dados (Data Flow)
    
 ```markdown
-```mermaid
+
    sequenceDiagram
   autonumber
   participant U as Usuário (Empregado SA)
