@@ -12,15 +12,15 @@
 | Campo | Valor |
 |---|---|
 | **Nome do Fluxo** | `[PREENCHER]` *Ex: “Hospedagem – Solicitação Nacional”* |
-| **Objetivo de Negócio** | `[PREENCHER]` *Ex: “Orientar a solicitação de hospedagem nacional conforme a política de viagens.”* [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
-| **RF/RNF Atendidos** | `[RFxx, RFyy, RNF01, RNF02, RNF03…]` [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
+| **Objetivo de Negócio** | `[PREENCHER]` *Ex: “Orientar a solicitação de hospedagem nacional conforme a política de viagens.”*  |
+| **RF/RNF Atendidos** | `[RFxx, RFyy, RNF01, RNF02, RNF03…]`  |
 | **Owner (Área/Responsável)** | `Equipe T&E SA` |
 | **Prioridade** | `Alta / Média / Baixa` |
-| **Requer Autenticação?** | `Sim – Microsoft Entra ID (SSO)` [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
-| **Canais Suportados** | `Teams (SA)` *(Web opcional)* [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
-| **Idiomas** | `PT-BR (primário); EN; ES` *(RNF01)* [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
-| **Escopo** | `Informativo. Sem integrações transacionais/ações no NEO KDS.` [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
-| **Observabilidade** | `Telemetria e auditoria (uso, erros, mapeamento intents); trilhas de auditoria admin` *(RNF07)* [1](https://vallourec-my.sharepoint.com/personal/gabriel_andrade_vallourec_com/Documents/Arquivos%20de%20Microsoft%20Copilot%20Chat/chatbot-especificacao-principal.pdf) |
+| **Requer Autenticação?** | `Sim – Microsoft Entra ID (SSO)` |
+| **Canais Suportados** | `Teams (SA)` *(Web opcional)* |
+| **Idiomas** | `PT-BR (primário); EN; ES` *(RNF01)*  |
+| **Escopo** | `Informativo. Sem integrações transacionais/ações no NEO KDS.`  |
+| **Observabilidade** | `Telemetria e auditoria (uso, erros, mapeamento intents); trilhas de auditoria admin` *(RNF07)* |
 
 ### 🔷 Triggers (Gatilhos de Entrada)
 
@@ -73,7 +73,7 @@
 flowchart TD
     START_NODE(("🟢 INÍCIO"))
     START_NODE --> NLU{"Intenção<br/>Hospedagem Nacional?"}
-    NLU -- "Sim" --> SLOTS["Coletar<br/>localidade • datas • dúvida"]
+    NLU -- "Sim" --> SLOTS["Coletar<br/>dúvida de solicitação"]
     NLU -- "Não" --> ROUTE["Outra intenção<br/>(roteamento)"]
     SLOTS --> SEARCH["🔎 Busca KB<br/>(política • diárias • hotéis)"]
     SEARCH -->|Encontrado| RESP["💬 Resposta com trechos<br/>e referência interna<br/>(sem link)"]
