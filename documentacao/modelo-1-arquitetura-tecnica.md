@@ -82,7 +82,7 @@ graph TB
   subgraph "📚 Fontes de Conhecimento"
     SP["SharePoint / Repositórios\n• Documentos normativos (PDF/Word)\n• Políticas de Viagem\n• Guias/Manuais / Troubleshooting NEO KDS"]
   end
-  AGKB["🤖 Copilot Studio – Knowledge"]
+  AGKB["🤖 Copilot Studio – KB"]
   SP --> AGKB
   style AGKB fill:#E8EAF6,stroke:#283593
    ```
